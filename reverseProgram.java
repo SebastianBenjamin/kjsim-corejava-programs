@@ -14,14 +14,13 @@ public class reverseProgram {
             System.out.println();
 
             StringTokenizer space = new StringTokenizer(sentence, " ");
-            String[] arrayOfWords = new String[space.countTokens()];
-            int count = 0;
+            String arrayOfWords="";
+           
             
             while (space.hasMoreTokens()) {
-                arrayOfWords[count++] = space.nextToken();
+                arrayOfWords += space.nextToken()+" ";
                
             }
-
           
             System.out.print(" Reversed sentence: "+  reverse(arrayOfWords));
             
@@ -40,10 +39,17 @@ System.out.println("\n");
         }
     }
 
-    public static String reverse(String[] gotString) {    
+    public static String reverse(String gotString) {
+        StringTokenizer space = new StringTokenizer(gotString, " ");
+        String[] arrayOfWords=new String[space.countTokens()];
+        int count=0;
+        while (space.hasMoreTokens()) {
+            arrayOfWords[count++]= space.nextToken();
+        }
+        
         String outString="";
-        for (int i = gotString.length - 1; i >= 0; i--) {
-            outString+= gotString[i]+" "; 
+        for (int i = arrayOfWords.length - 1; i >= 0; i--) {
+            outString+= arrayOfWords[i]+" "; 
         }
         return outString;
     }

@@ -25,8 +25,8 @@ public class anagramOfWords {
         u_Word2 = uI.nextLine().trim();
 
         
-        StringTokenizer space1 = new StringTokenizer(u_Word1, " ");
-        StringTokenizer space2 = new StringTokenizer(u_Word2, " ");
+        StringTokenizer space1 = new StringTokenizer(u_Word1, " .!?");
+        StringTokenizer space2 = new StringTokenizer(u_Word2, " .!?");
         
         while (space1.hasMoreTokens()) {
             String myWord = space1.nextToken();
