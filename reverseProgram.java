@@ -22,11 +22,9 @@ public class reverseProgram {
                
             }
 
-            arrayOfWords = reverse(arrayOfWords);
-            System.out.print(" Reversed sentence: ");
-            for (int i = 0; i < arrayOfWords.length; i++) {
-                System.out.print(arrayOfWords[i] + " ");
-            }
+          
+            System.out.print(" Reversed sentence: "+  reverse(arrayOfWords));
+            
           
 System.out.println("\n");
             System.out.print(" Do you want to reverse another sentence?\n 1: Yes \n 2: No \n Your selection : ");
@@ -42,12 +40,11 @@ System.out.println("\n");
         }
     }
 
-    public static String[] reverse(String[] gotString) {
-        String[] myString = new String[gotString.length];
-        int count = 0;
+    public static String reverse(String[] gotString) {    
+        String outString="";
         for (int i = gotString.length - 1; i >= 0; i--) {
-            myString[count++] = gotString[i]; 
+            outString+= gotString[i]+" "; 
         }
-        return myString;
+        return outString;
     }
 }
