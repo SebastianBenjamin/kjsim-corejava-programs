@@ -28,7 +28,7 @@ public class findReplace {
                 if (line.equals("404")) {
                     boo2 = false;
                 } else {
-                    line = " " + line+"\n";
+                    line = " " + line+" \n";
                     para.append(line);
                 }
             }
@@ -105,7 +105,7 @@ public class findReplace {
             }
 
             System.out.println();
-            System.out.print("Do you want to find and replace words in a new paragraph?\n 1: Yes\n 2: No\n Your selection: ");
+            System.out.print("Do you want to find and replace words of a new paragraph?\n 1: Yes\n 2: No\n Your selection: ");
             int Select = uI.nextInt();
             uI.nextLine();
 
