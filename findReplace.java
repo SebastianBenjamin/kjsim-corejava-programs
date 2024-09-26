@@ -28,7 +28,7 @@ public class findReplace {
                 if (line.equals("404")) {
                     boo2 = false;
                 } else {
-                    line = " " + line;
+                    line = " " + line+"\n";
                     para.append(line);
                 }
             }
@@ -87,7 +87,13 @@ public class findReplace {
                     System.out.println("+--------------------------------------------------+");
                     System.out.println(" Result paragraph: ");
                     for(int i=0;i<result.length();i++){
-                      System.out.print(result.charAt(i));
+                        if(i==0){
+                            System.out.print(" "+result.charAt(i));
+                        }
+                        else{
+                            System.out.print(result.charAt(i));
+                        }
+                      
                      }
                      System.out.println();
                     System.out.println("+--------------------------------------------------+");

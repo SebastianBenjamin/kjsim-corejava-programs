@@ -19,54 +19,79 @@
         int sent_count=0;
         int word_count=0;
         int vowels_count=0;
-        int[] count=new int[10000];
+       
+        int count;
+       StringBuffer indexes=new StringBuffer();
         int count_v=0;
-        int count_i=0;
+
         while (boo2) {
             line=uI.nextLine().trim();
             if(line.equals("404")){
             boo2=false;
             }
-                for(int i=0;i<line.length();i++){
-                    if(line.charAt(i)=='.'){
+            else{
+                for (int i = 0; i < line.length(); i++) {
+                    if (line.charAt(i) == '.' || line.charAt(i) == '?' || line.charAt(i) == '!') {
                         sent_count++;
                     }
-                }
+            }}
+               
         
-            para+=" \n "+line;
+            para+="\n"+line;
             line_count++;
-            String[] word_arr=line.split(" ");
+            StringTokenizer space =new StringTokenizer(line," ");
+             count=0;
+            String[] word_arr=new String[space.countTokens()];
+            while (space.hasMoreTokens()) {
+                word_arr[count++]=space.nextToken();
+            }
+           
             word_count+=word_arr.length;
             for(int i=0;i<word_arr.length;i++){
                 String myWord=word_arr[i].toLowerCase();
                 for(int j=0;j<myWord.length();j++){
+                    
                     count_v++;
                     if(myWord.charAt(j)=='a'||myWord.charAt(j)=='e'||myWord.charAt(j)=='i'||myWord.charAt(j)=='o'||myWord.charAt(j)=='u'){
                         vowels_count++;
-                        count[count_i]=count_v;
-                        count_i++;
+                       indexes.append(count_v+" ");
                     }
-                  
+                    
+                    
                 }
+                 count_v++;
             }
             if(sent_count==0){
                 sent_count=1;
             }
         }
+        StringTokenizer vspace=new StringTokenizer(indexes.toString()," ");
+    int[] vindex=new int[vspace.countTokens()];
+    count=0;
+        while(vspace.hasMoreTokens()){
+      vindex[count++]=Integer.valueOf(vspace.nextToken());
+        }
+        StringTokenizer st_404=new StringTokenizer(para,"404");
+
         System.out.println();
         System.out.println("+--------------------------------------------------+");
         System.out.println("|                  Checking Results                |");
         System.out.println("+--------------------------------------------------+");
-        System.out.println(" The Paragraph you have enetered: \n ' " + para.trim().replace("404", "")+" '");
+        System.out.println(" The Paragraph you have enetered:");
+        while (st_404.hasMoreTokens()) {
+            System.out.println(st_404.nextToken());
+        }
         System.out.println(" Total words: " + (word_count-1));
         System.out.println(" Total lines: " + (line_count-1));
         System.out.println(" Total sentences: " + sent_count);
+        System.out.println(" Total characters: " + (count_v-5));
         System.out.println(" Total vowels: " + vowels_count);
         System.out.println();
         System.out.println(" Indexes(ignore spaces) of vowels in given paragraph :");
-        for(int i=0;i<count.length;i++){
-            if(count[i]!=0){
-                System.out.print(count[i]+" ");
+        
+        for(int i=0;i<vindex.length;i++){
+            if(vindex[i]!=0){
+                System.out.print(vindex[i]+" ");
                 
             }
         }
