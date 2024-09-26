@@ -25,7 +25,7 @@ public class sentenceExtract {
                 }
             }
 
-            System.out.print("Enter the word you want to search: ");
+            System.out.print("Enter the word you want to extract line : ");
             String wordToSearch = uI.nextLine();
 
             StringTokenizer dot = new StringTokenizer(para.toString(), ".");
@@ -70,7 +70,7 @@ public class sentenceExtract {
             if (selection != 1) {
                 boo = false;
                 System.out.println();
-                System.out.println(" Exiting the Reverse program!");
+                System.out.println(" Exiting the Sentence Extraction program!");
             System.out.println("+--------------------------------------------------+");
 
             }
