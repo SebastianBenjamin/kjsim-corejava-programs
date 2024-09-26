@@ -111,6 +111,8 @@ public class findReplace {
 
             if (Select == 2) {
                 boo1 = false;
+                System.out.println("Exiting the Find & Replace Program. Goodbye!");
+                System.out.println("+--------------------------------------------------+");
             }
         }
 

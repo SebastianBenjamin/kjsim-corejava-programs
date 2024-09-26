@@ -14,7 +14,7 @@ public class sentenceExtract {
             System.out.println("| to end the input.                                |");
             System.out.println("+--------------------------------------------------+");
             System.out.println();
-        
+
             boolean boo1 = true;
             while (boo1) {
                 String line = uI.nextLine().trim();
@@ -25,7 +25,7 @@ public class sentenceExtract {
                 }
             }
 
-            System.out.println("Enter the word you want to search: ");
+            System.out.print("Enter the word you want to search: ");
             String wordToSearch = uI.nextLine();
 
             StringTokenizer dot = new StringTokenizer(para.toString(), ".");
@@ -37,7 +37,7 @@ public class sentenceExtract {
 
             StringBuffer indexofword = new StringBuffer();
             for (int i = 0; i < sentence.length; i++) {
-                StringTokenizer space = new StringTokenizer(sentence[i], " ");
+                StringTokenizer space = new StringTokenizer(sentence[i], " !@#%^&*()_+{}[]|\':;<>/");
                 String[] words = new String[space.countTokens()];
                 count = 0;
                 while (space.hasMoreTokens()) {
@@ -58,12 +58,22 @@ public class sentenceExtract {
             }
 
             System.out.println("+--------------------------------------------------+");
-            System.out.println("            Sentences containing the word "+wordToSearch+"         ");
+            System.out.println("            Sentences containing the word ' " + wordToSearch + " '         ");
             System.out.println("+--------------------------------------------------+");
             for (int i = 0; i < indexes.length; i++) {
                 System.out.println(sentence[indexes[i]]);
             }
             System.out.println("+--------------------------------------------------+");
+            System.out.print(" Do you want to extract another para ? \n 1: Yes\n 2: No\nYour selection: ");
+            int selection = uI.nextInt();
+            uI.nextLine();
+            if (selection != 1) {
+                boo = false;
+                System.out.println();
+                System.out.println(" Exiting the Reverse program!");
+            System.out.println("+--------------------------------------------------+");
+
+            }
         }
     }
 }
