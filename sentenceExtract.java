@@ -70,7 +70,7 @@ public class sentenceExtract {
             if (selection != 1) {
                 boo = false;
                 System.out.println();
-                System.out.println(" Exiting the Sentence Extraction program!");
+                System.out.println(" Exiting the Sentence Extraction  program!");
             System.out.println("+--------------------------------------------------+");
 
             }

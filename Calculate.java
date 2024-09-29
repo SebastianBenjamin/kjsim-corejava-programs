@@ -206,11 +206,13 @@ if(selection==1){
 boo=true;
 }
 else{
+    
 boo=false;
 }
   break;
 
   case 5:
+  System.out.println("Exiting the program");
 boo=false;
  break;
  default:

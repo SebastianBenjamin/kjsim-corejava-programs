@@ -34,13 +34,15 @@ if(sentence.trim().length()>0){
     System.out.println("------------------------------------------");
     System.out.println();
     System.out.println(" Select Options :\n 1:Check new sentence or String\n 2:Exit\n Select an option from above to continue.");
+    int Select=UI.nextInt();
     System.out.println();
     System.out.println("------------------------------------------");
-    int Select=UI.nextInt();
     if(Select==1){boo=true; System.out.println(" Selected : Check new Sentence");}
-    else{boo=false; System.out.println(" Selected : Exit");}
-    System.out.println();
+    else{boo=false; System.out.println(" Selected : Exit");
     UI.close();
+}
+    System.out.println();
+    
  } 
 else{
     System.out.println();
