@@ -3,13 +3,13 @@ import java.util.*;
 public class leapYearChecker {
     public static void main(String[] args) {
         Scanner uI = new Scanner(System.in);
-        StringBuffer totalYears = new StringBuffer();
+    
         boolean boo1 = true;
         boolean boo2 = true;
 
         while (boo1) {
             boo2 = true;
-
+            StringBuffer totalYears = new StringBuffer();
             System.out.println("+--------------------------------------------------+");
             System.out.println("|               Leap Year Checker                  |");
             System.out.println("+--------------------------------------------------+");
@@ -63,6 +63,12 @@ public class leapYearChecker {
     }
 
     public static boolean isLeapYear(int year) {
-        return (year % 4) == 0;
+       if(year%4==0){
+        if (year %100==0){
+            return year%400==0;
+        }
+        else return true;
+       }
+       else return false;
     }
 }
