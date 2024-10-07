@@ -18,26 +18,26 @@ class Employee {
         System.out.println("|               Employee Data Entry                |");
         System.out.println("+--------------------------------------------------+");
 System.out.println();
-        System.out.print("Enter Employee ID            : ");
+        System.out.print(" Enter ID                     : ");
         ID_No = ui.nextInt();
         ui.nextLine(); 
 
-        System.out.print("Enter Employee Name          : ");
+        System.out.print(" Enter Name                   : ");
         Name = ui.nextLine();
 
-        System.out.print("Enter Date of Joining (DOJ)  : ");
+        System.out.print(" Enter Date of Joining (DOJ)  : ");
         DOJ = ui.nextLine();
 
-        System.out.print("Enter Designation            : ");
+        System.out.print(" Enter Designation            : ");
         Designation = ui.nextLine();
 
-        System.out.print("Enter Department             : ");
+        System.out.print(" Enter Department             : ");
         Department = ui.nextLine();
 
-        System.out.print("Enter PAN                    : ");
+        System.out.print(" Enter PAN                    : ");
         PAN = ui.nextLine();
 
-        System.out.print("Enter Basic Pay (in Rupees)  : ");
+        System.out.print(" Enter Basic Pay (in Rupees)  : ");
         Basic_pay = ui.nextFloat();
         ui.nextLine();
     }
