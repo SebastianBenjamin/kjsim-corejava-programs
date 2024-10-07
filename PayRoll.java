@@ -86,7 +86,7 @@ System.out.println();
         System.out.println(" Basic Pay        : " + Basic_pay+" Rs");
         System.out.println(" Gross Pay        : " + gross_pay+" Rs");
         System.out.println(" Taxable Amount   : " + Taxable_amount+" Rs");
-        System.out.println(" Net Pay          : " + Net_pay+" Rs");
+        System.out.println(" Net Pay          : " + netPayCalculation()+" Rs");
 System.out.println();
         System.out.println("+--------------------------------------------------+");
         System.out.println("|         Payroll Calculation Completed            |");
