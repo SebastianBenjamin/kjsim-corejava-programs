@@ -8,7 +8,7 @@ interface NetPayCalculation {
 
 class Employee {
     int ID_No;
-    String Name, DOJ, Designation, PAN, Department;
+    String Name, DOJ, Designation, PAN_No, Department;
     float Basic_pay;
     Scanner ui = new Scanner(System.in);
 
@@ -34,8 +34,8 @@ System.out.println();
         System.out.print(" Enter Department             : ");
         Department = ui.nextLine();
 
-        System.out.print(" Enter PAN                    : ");
-        PAN = ui.nextLine();
+        System.out.print(" Enter PAN Number             : ");
+        PAN_No = ui.nextLine();
 
         System.out.print(" Enter Basic Pay (in Rupees)  : ");
         Basic_pay = ui.nextFloat();
@@ -82,7 +82,7 @@ System.out.println();
         System.out.println(" Date of Joining  : " + DOJ);
         System.out.println(" Designation      : " + Designation);
         System.out.println(" Department       : " + Department);
-        System.out.println(" PAN              : " + PAN);
+        System.out.println(" PAN Number       : " + PAN_No);
         System.out.println(" Basic Pay        : " + Basic_pay+" Rs");
         System.out.println(" Gross Pay        : " + gross_pay+" Rs");
         System.out.println(" Taxable Amount   : " + Taxable_amount+" Rs");

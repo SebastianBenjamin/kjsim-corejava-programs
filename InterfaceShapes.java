@@ -217,21 +217,6 @@ public class InterfaceShapes {
         break;
         
         }
-        
-        /*
-        
-            Sphere mySphere = new Sphere(10);
-            Cube myCube = new Cube(2);
-            Prism myPrism = new Prism(10,2,11);
-            Cylinder myCylinder = new Cylinder(10,2);
-        System.out.println("Surface Area of Sphere = "+mySphere.surfacearea()+"Volume of Sphere = "+mySphere.Volume());
-        
-        System.out.println("Surface Area of Cube = "+myCube.surfacearea()+"Volume of Cube = "+myCube.Volume());
-        
-        System.out.println("Surface Area of Prism = "+myPrism.surfacearea()+"Volume of Prism = "+myPrism.Volume());
-        
-        System.out.println("Surface Area of Cylinder = "+myCylinder.surfacearea()+"Volume of Cylinder = "+myCylinder.Volume());*/
-            
         }}
         
         
