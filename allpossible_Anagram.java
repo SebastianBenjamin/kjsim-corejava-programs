@@ -12,11 +12,11 @@ userIn.close();
         int factorialvalue = factorial(uW.length());
         System.out.println("Factorial: " + factorialvalue);
 
-        char[] uW_psbWordArray = new char[factorialvalue];  // Not used, can be removed later
+        // char[] uW_psbWordArray = new char[factorialvalue];  // Not used, can be removed later
         char[] uW_charArray = new char[uW.length()];
         int[] uW_indArray = new int[uW.length()];
         String[] uW_TindArray = new String[factorialvalue];
-        String pseudoWord = "";
+        // String pseudoWord = "";
 
         
 
