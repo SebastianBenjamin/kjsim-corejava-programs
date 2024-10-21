@@ -64,7 +64,7 @@ if(boo){
             StringBuffer result = new StringBuffer();
             while (decimal > 0) {
                 int v = decimal % base;
-                if (v < 10) {
+                if (v < 10) { 
                     result.append((char) (v + 48));
                 } else {
                     result.append((char) (v + 55));
