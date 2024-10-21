@@ -15,7 +15,7 @@ class ExitException extends Exception{
 }
 
 
-public class ExpVow {
+public class Test {
     public static void main(String[] args) throws VowelException,BlankException,ExitException,ArrayIndexOutOfBoundsException {
         String vowels="aeiou";
         boolean boo=false;

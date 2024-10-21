@@ -1,17 +1,14 @@
-import java.util.Scanner;
-
+import java.util.*;
 class AgeNotWithinRangeException extends Exception {
     public AgeNotWithinRangeException(String message) {
         super(message);
     }
 }
-
 class NameNotValidException extends Exception {
     public NameNotValidException(String message) {
         super(message);
     }
 }
-
 class Student {
     int rollNo;
     int age;
@@ -60,8 +57,8 @@ public class ExpStudent {
         while (boo) {
             try {
                 System.out.println("\n+--------------------------------------+");
-                System.out.println("|         Student Information          |");
-                System.out.println("+--------------------------------------+");
+                  System.out.println("|         Student Information          |");
+                  System.out.println("+--------------------------------------+");
                 
                 System.out.print("Enter Roll No: ");
                 int rollNo = uI.nextInt();
@@ -90,7 +87,7 @@ public class ExpStudent {
             if (Selection != 1) {
                 boo = false;
                 System.out.println("\n+--------------------------------------+\n");
-                System.out.println("Exiting the Student Information Program.");
+                  System.out.println("Exiting the Student Information Program.");
                 System.out.println("\n+--------------------------------------+\n");
             }
         }

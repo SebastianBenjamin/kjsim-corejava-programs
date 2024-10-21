@@ -29,29 +29,31 @@ String resultS="";
 
         if(args[1].charAt(0)==AOs[i]){
             booAo=true;
+            double a=Double.valueOf(args[0]);
+            double b=Double.valueOf(args[2]);
 switch (AOs[i]) {
     case '+':
-        result=Double.valueOf(args[0])+  Double.valueOf(args[2]);
-        resultS=Double.valueOf(args[0])+" + "+  Double.valueOf(args[2]);
+        result=a+b;
+        resultS=a+" + "+b;
         break;
     case '-':
-        result=Double.valueOf(args[0])-  Double.valueOf(args[2]);
-        resultS=Double.valueOf(args[0])+" - "+  Double.valueOf(args[2]);
+        result=a-b;
+        resultS=a+" - "+b;
 
         break;
     case '/':
-        result=Double.valueOf(args[0])/  Double.valueOf(args[2]);
-        resultS=Double.valueOf(args[0])+" / "+  Double.valueOf(args[2]);
+        result=a/b;
+        resultS=a+" / "+b;
 
         break;
     case '*':
-        result=Double.valueOf(args[0])*  Double.valueOf(args[2]);
-        resultS=Double.valueOf(args[0])+" * "+  Double.valueOf(args[2]);
+        result=a*b;
+        resultS=a+" * "+b;
 
         break;
     case '%':
-        result=Double.valueOf(args[0])%  Double.valueOf(args[2]);
-        resultS=Double.valueOf(args[0])+" % "+  Double.valueOf(args[2]);
+        result=a%b;
+        resultS=a+" % "+b;
 
         break;
 
