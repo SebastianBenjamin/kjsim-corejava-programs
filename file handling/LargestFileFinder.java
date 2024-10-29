@@ -22,7 +22,6 @@ public class LargestFileFinder {
                 String fName = "";
                 String fPath = "";
                 long fSize = 0;
-
                
                     for (File file : files) {
                         long fileSize = file.length();

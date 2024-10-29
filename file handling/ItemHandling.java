@@ -152,7 +152,6 @@ for(int k=0;k<i.length;k++){
 
     }
 
-
     public static String fill(String mys,int i){
   while(mys.length()<i){
     mys+=" ";

@@ -18,7 +18,7 @@ public class CopyCreatePaste {
                     System.out.println("New file 'CopyPastedFile.txt' created successfully.");
                 } else {
                     System.out.println("File 'CopyPastedFile.txt' already exists. Contents will be overwritten.");
-                }
+            }
 
                 FileWriter fwr = new FileWriter(newFile);
                 
