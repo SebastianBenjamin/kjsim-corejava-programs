@@ -105,7 +105,7 @@ Scanner ui=new Scanner(System.in);
 System.out.print("\n Enter item Name :");
 String name=ui.nextLine().toLowerCase();
 StringTokenizer comma=new StringTokenizer(name,",");
-String[] fname=new String[comma.countTokens()];
+String[] fname=new String[comma.countTokens()]; boolean found=false;
 int o=0;
 while(comma.hasMoreTokens()){
 fname[o++]=comma.nextToken().trim();
@@ -118,13 +118,19 @@ for(int k=0;k<i.length;k++){
         System.out.println("+--------------------------------------+");
     }
     else{
+       
+                
 for(int l=0;l<fname.length;l++){
+   
     if(fname[l].toLowerCase().equals(n[k].toLowerCase())){   
         System.out.println("|"+i[k]+" |"+fill(n[k],15)+"|"+fill(p[k],6)+"|"+fill(q[k],9)+"|");
+        found=true;
+}
+
 }
 }
 }
-}
+if(!found){System.out.println(" Item/Items '"+name+"' Not Found");}
 ui.close();
 System.out.println("+--------------------------------------+");
     }
