@@ -23,7 +23,7 @@ public class CopyCreatePaste {
                 FileWriter fwr = new FileWriter(newFile);
                 
                 while (readFile.hasNextLine()) {
-                    fwr.write(readFile.nextLine() + System.lineSeparator());
+                    fwr.write(readFile.nextLine() );
                 }
 
                 System.out.println("Content copied successfully to 'CopyPastedFile.txt'.");
