@@ -102,7 +102,7 @@ System.out.println("+-------------------------------------------------+");
     }
     public static void search(String[] i,String[]n,String[] p,String[] q){
 Scanner ui=new Scanner(System.in);
-System.out.print("\n Enter item Name :");
+System.out.print("\n Enter Item Name or Names :");
 String name=ui.nextLine().toLowerCase();
 StringTokenizer comma=new StringTokenizer(name,",");
 String[] fname=new String[comma.countTokens()]; boolean found=false;
