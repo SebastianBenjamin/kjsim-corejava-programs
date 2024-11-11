@@ -142,7 +142,7 @@ System.out.println("+--------------------------------------+");
                 a = b;
             }
         }
-        System.out.println("\n Costliest = "+a);
+        System.out.println("\n Costliest Amount = "+a);
 for(int k=0;k<i.length;k++){
     if(k==0){
         System.out.println("\n+--------------------------------------+");
