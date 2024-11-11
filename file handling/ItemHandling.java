@@ -45,7 +45,7 @@ ii++;
 
 }
 System.out.println("+-----------------------------------------------------------------------------------+");
-System.out.println("|                                     ALL ITEMS                                     |");
+System.out.println("|                                   ITEM HANDLING                                   |");
 System.out.println("+-----------------------------------------------------------------------------------+");
 System.out.println();
 System.out.println("+--------------------------------+");
