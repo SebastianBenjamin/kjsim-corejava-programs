@@ -40,7 +40,7 @@ public class CopyCreatePaste {
             System.out.println("The specified file does not exist. Please check the path and try again.");
         }
 
-        System.out.println("\nThank you for using the Copy-Paste Program!");
+        System.out.println("\nThank you for using the CopyCreatePaste Program!");
      
     }
 }

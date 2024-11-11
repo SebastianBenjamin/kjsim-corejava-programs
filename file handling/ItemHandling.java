@@ -139,7 +139,7 @@ System.out.println("+--------------------------------------+");
         System.out.println("\n Costliest = "+a);
 for(int k=0;k<i.length;k++){
     if(k==0){
-        System.out.println("\n  +--------------------------------------+");
+        System.out.println("\n+--------------------------------------+");
         System.out.println("|"+i[k]+"   |"+fill(n[k],15)+"|"+fill(p[k],6)+"|"+fill(q[k],9)+"|");
         System.out.println("+--------------------------------------+");
     }

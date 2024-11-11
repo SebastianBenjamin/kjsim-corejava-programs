@@ -7,6 +7,7 @@ public class LargestFileFinder {
         Scanner ui = new Scanner(System.in);
         boolean boo = true;
         while (boo) {
+            try{
         System.out.println("\n+---------------------------------------------+");
         System.out.println("|                Largest File Finder          |");
         System.out.println("+---------------------------------------------+\n");
@@ -52,7 +53,10 @@ public class LargestFileFinder {
                 System.out.println("Thank you for using the Largest File Finder!");
                 System.out.println("+---------------------------------------------+");
             }
+        }catch(Exception e){
+            e.printStackTrace();
         }
+    }
 
         ui.close();
     }
