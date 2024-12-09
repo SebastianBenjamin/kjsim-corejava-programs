@@ -3,7 +3,7 @@ import java.io.*;
 
 public class ItemHandling {
         public static void main(String[] args)throws IOException,FileNotFoundException {
-            File myFile= new File("E:\\KJSIM\\Sem 1\\CJ\\java programs\\item.dat");
+            File myFile= new File("D:\\Benjamin_Sebastian_MCA-2024-26_Java\\item.dat");
             Scanner fileLine=new Scanner(myFile);
             int lineno=0;
             while(fileLine.hasNext()){
@@ -82,21 +82,21 @@ fileGet.close();
         int sum=0;
 for(int k=0;k<i.length;k++){
     if(k==0){
-        System.out.println("+-------------------------------------------------+");
+        System.out.println("  +-------------------------------------------------+");
 
-        System.out.println("|"+i[k]+"   |"+fill(n[k],15)+"|"+fill(p[k],6)+"|"+fill(q[k],8)+"|"+"Total Cost |");
-        System.out.println("+-------------------------------------------------+");
+        System.out.println("  |"+i[k]+"   |"+fill(n[k],15)+"|"+fill(p[k],6)+"|"+fill(q[k],8)+"|"+"Total Cost |");
+        System.out.println("  +-------------------------------------------------+");
     }
     else{
         int am=Integer.valueOf(p[k])*Integer.valueOf(q[k]);
         sum+=am;
-        System.out.println("|"+i[k]+" |"+fill(n[k],15)+"|"+fill(p[k],6)+"|"+fill(q[k],8)+"|"+fill(String.valueOf(am),11)+"|");
-        System.out.println("+-------------------------------------------------+");
+        System.out.println("  |"+i[k]+" |"+fill(n[k],15)+"|"+fill(p[k],6)+"|"+fill(q[k],8)+"|"+fill(String.valueOf(am),11)+"|");
+        System.out.println("  +-------------------------------------------------+");
         
     }
 }
-System.out.println("|                   Total             |"+sum+"     |");
-System.out.println("+-------------------------------------------------+");
+System.out.println("  |                   Total             |"+sum+"     |");
+System.out.println("  +-------------------------------------------------+");
           
       }
     }
@@ -113,9 +113,9 @@ fname[o++]=comma.nextToken().trim();
 
 for(int k=0;k<i.length;k++){
     if(k==0){
-        System.out.println("+--------------------------------------+");
-        System.out.println("|"+i[k]+"   |"+fill(n[k],15)+"|"+fill(p[k],6)+"|"+fill(q[k],9)+"|");
-        System.out.println("+--------------------------------------+");
+        System.out.println("  +--------------------------------------+");
+        System.out.println("  |"+i[k]+"   |"+fill(n[k],15)+"|"+fill(p[k],6)+"|"+fill(q[k],9)+"|");
+        System.out.println("  +--------------------------------------+");
     }
     else{
        
@@ -123,7 +123,7 @@ for(int k=0;k<i.length;k++){
 for(int l=0;l<fname.length;l++){
    
     if(fname[l].toLowerCase().equals(n[k].toLowerCase())){   
-        System.out.println("|"+i[k]+" |"+fill(n[k],15)+"|"+fill(p[k],6)+"|"+fill(q[k],9)+"|");
+        System.out.println("  |"+i[k]+" |"+fill(n[k],15)+"|"+fill(p[k],6)+"|"+fill(q[k],9)+"|");
         found=true;
 }
 
@@ -132,7 +132,7 @@ for(int l=0;l<fname.length;l++){
 }
 if(!found){System.out.println(" Item/Items '"+name+"' Not Found");}
 ui.close();
-System.out.println("+--------------------------------------+");
+System.out.println("  +--------------------------------------+");
     }
     public static void costliest(String[] i,String[]n,String[] p,String[] q){
         int a=0;
@@ -145,13 +145,13 @@ System.out.println("+--------------------------------------+");
         System.out.println("\n Costliest Amount = "+a);
 for(int k=0;k<i.length;k++){
     if(k==0){
-        System.out.println("\n+--------------------------------------+");
-        System.out.println("|"+i[k]+"   |"+fill(n[k],15)+"|"+fill(p[k],6)+"|"+fill(q[k],9)+"|");
-        System.out.println("+--------------------------------------+");
+        System.out.println("\n  +--------------------------------------+");
+        System.out.println("  |"+i[k]+"   |"+fill(n[k],15)+"|"+fill(p[k],6)+"|"+fill(q[k],9)+"|");
+        System.out.println("  +--------------------------------------+");
     }
     else if(Integer.valueOf(p[k])==a){
-        System.out.println("|"+i[k]+" |"+fill(n[k],15)+"|"+fill(p[k],6)+"|"+fill(q[k],9)+"|");
-        System.out.println("+--------------------------------------+");
+        System.out.println("  |"+i[k]+" |"+fill(n[k],15)+"|"+fill(p[k],6)+"|"+fill(q[k],9)+"|");
+        System.out.println("  +--------------------------------------+");
 
     }
 }
