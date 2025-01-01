@@ -3,7 +3,7 @@ import java.io.*;
 
 public class ItemHandling {
         public static void main(String[] args)throws IOException,FileNotFoundException {
-            File myFile= new File("D:\\Benjamin_Sebastian_MCA-2024-26_Java\\item.dat");
+            File myFile= new File("E:\\KJSIM\\Sem 1\\CJ\\Benjamin_Sebastian_MCA-2024-26_Java (1)\\item.dat");
             Scanner fileLine=new Scanner(myFile);
             int lineno=0;
             while(fileLine.hasNext()){

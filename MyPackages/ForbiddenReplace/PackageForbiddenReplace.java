@@ -23,6 +23,7 @@ public class PackageForbiddenReplace {
                     boo1 = false;
                 } else {
                     para.append(" " + line + "\n");
+			para.append("\n");
                 }
             }
             System.out.println();
